@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0; 
+    box-sizing: border-box;
+ }
+ input[type=number]::-webkit-inner-spin-button,
+ input[type=number]::-webkit-outer-spin-button {
+     -webkit-appearance: none; /* webkit is used The CSS -webkit-appearance property allows web designers                     
+                                                      to make HTML components look more like native
+                                                    User Interface (UI) controls. It also supports the CSS -webkit-appearance property,
+                                                             which is a proprietary CSS extension.*/
+     margin: 0;
+ }
+ 
+ .container{
+     width: 40%;
+     margin: 100px auto;
+     border:2px solid #333;
+     padding:30px 50px;
+     border-radius:20px ;
+     text-align: center;
+ }
+ .container p{
+     margin-top: 20px;
+     font-size: 14px;
+     margin-bottom: 30px ;
+ }
+ .otp-div{
+
+     display: flex;
+     gap:12px;
+ 
+ }
+ .otp{
+     height:50px;
+     width:50px;
+     border-radius: 10px;
+     text-align:center ;
+     border: 1px solid #fff;
+ }
+ 
+ .otp:valid{
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* The :valid selector is used to select the form elements with 
+                            a given value that validates according to the elements. This selector only works for form elements with some 
+                                                                                         limitations such as input elements 
+                                                 with min and max attributes, email fields with a legal email, or number fields
+                                                  with a numeric value, etc. */
+ }
+ @media screen and (min-width:50px) and (max-width:769px) {
+    .container{
+        width:70%;
+        padding: 25px;
+    }
+    .otp-div{
+        width:65%;
+        gap:5px;
+    }
+    
+ }
+ @media screen and (min-width:50px) and (max-width:391px){
+    .container{
+        width: 90%;
+        padding:25px;
+    }
+    .otp-div{
+        width:85%;
+        gap:3px;
+    }
+    
+ }
+ @media screen and (min-width:50px) and (max-width:284px){
+    
+    .otp-div{
+        width:85%;
+        gap:1px;
+    }
+    
+ }
